@@ -3,8 +3,8 @@ data{
     int N;        // number of data points
     vector[N] y;  // streams
     vector[N] X1; // acousticness
-    vector[N] X2; // loudness
-    vector[N] X3; // valence
+    vector[N] X2; // danceability
+    vector[N] X3; // tempo
     
     // year 2018 top 100 songs
     int Npred;        
