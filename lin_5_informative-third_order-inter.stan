@@ -1,6 +1,7 @@
 data{
-    // year 2017 top 100 songs
+    // year 2017 songs
     int N;        // number of data points
+
     vector[N] y;  // streams
     vector[N] X1; // acousticness
     vector[N] X2; // danceability
@@ -8,7 +9,7 @@ data{
     vector[N] X4; // tempo
     vector[N] X5; // valence
 
-    // year 2018 top 100 songs
+    // year 2018 songs
     int Npred;        
     vector[Npred] X1pred; 
     vector[Npred] X2pred;
@@ -70,11 +71,14 @@ transformed parameters{
 model{
     a ~ normal(mu_a, sigma_0);
     b ~ normal(mu_b, sigma_0);
+    sigma ~ normal(0, 0.1);
+
     y ~ normal(mu, sigma);
 }
 
 generated quantities{
-    vector[Npred] ypred;
+    vector[Npred] ypred_2018;
+    vector[N] ypred;
     vector[N] log_lik;
     vector[Npred] X2X4pred;
     vector[Npred] X1X5pred;
@@ -117,8 +121,11 @@ generated quantities{
     }
     
     for (j in 1:Npred){
+
         // prediction for year 2018
-        ypred[j] = normal_rng(a + b[1]*X1pred[j] + b[2]*X2pred[j] + b[3]*X3pred[j] + b[4]*X4pred[j] + b[5]*X5pred[j] + b[6]*X11pred[j] + b[7]*X22pred[j] + b[8]*X33pred[j] + b[9]*X44pred[j] + b[10]*X55pred[j] + b[11]*X111pred[j] + b[12]*X222pred[j] + b[13]*X333pred[j] + b[14]*X444pred[j] + b[15]*X555pred[j] + b[16]*X2X4pred[j] + b[17]*X3X5pred[j] + b[18]*X1X5pred[j] + b[19]*X2X5pred[j], sigma);
+        ypred_2018[j] = normal_rng(a + b[1]*X1pred[j] + b[2]*X2pred[j] + b[3]*X3pred[j] + b[4]*X4pred[j] + b[5]*X5pred[j] + b[6]*X11pred[j] + b[7]*X22pred[j] + b[8]*X33pred[j] + b[9]*X44pred[j] + b[10]*X55pred[j] + b[11]*X111pred[j] + b[12]*X222pred[j] + b[13]*X333pred[j] + b[14]*X444pred[j] + b[15]*X555pred[j] + b[16]*X2X4pred[j] + b[17]*X3X5pred[j] + b[18]*X1X5pred[j] + b[19]*X2X5pred[j], sigma);
+        ypred[j] = normal_rng(a + b[1]*X1[j] + b[2]*X2[j] + b[3]*X3[j] + b[4]*X4[j] + b[5]*X5[j] + b[6]*X11[j] + b[7]*X22[j] + b[8]*X33[j] + b[9]*X44[j] + b[10]*X55[j] + b[11]*X111[j] + b[12]*X222[j] + b[13]*X333[j] + b[14]*X444[j] + b[15]*X555[j] + b[16]*X2X4[j] + b[17]*X3X5[j] + b[18]*X1X5[j] + b[19]*X2X5[j], sigma);
+
     } 
  
 }

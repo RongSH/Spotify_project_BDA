@@ -1,5 +1,5 @@
 data{
-    // year 2017 top 100 songs
+    // year 2017 songs
     int N;        // number of data points
     vector[N] y;  // streams
     vector[N] X1; // acousticness
@@ -8,7 +8,7 @@ data{
     vector[N] X4; // tempo
     vector[N] X5; // valence
 
-    // year 2018 top 100 songs
+    // year 2018 songs
     int Npred;        
     vector[Npred] X1pred; 
     vector[Npred] X2pred;
@@ -59,7 +59,8 @@ model{
 }
 
 generated quantities{
-    vector[Npred] ypred;
+    vector[Npred] ypred_2018;
+    vector[N] ypred;
     vector[N] log_lik;
     vector[Npred] X2X4pred;
     vector[Npred] X3X5pred;
@@ -87,7 +88,9 @@ generated quantities{
     
     for (j in 1:Npred){
         // prediction for year 2018
-        ypred[j] = normal_rng(a + b[1]*X1pred[j] + b[2]*X2pred[j] + b[3]*X3pred[j] + b[4]*X4pred[j] + b[5]*X5pred[j] + b[6]*X11pred[j] + b[7]*X22pred[j] + b[8]*X33pred[j] + b[9]*X44pred[j] + b[10]*X55pred[j] + b[11]*X2X4pred[j] + b[12]*X3X5pred[j], sigma);
+        ypred_2018[j] = normal_rng(a + b[1]*X1pred[j] + b[2]*X2pred[j] + b[3]*X3pred[j] + b[4]*X4pred[j] + b[5]*X5pred[j] + b[6]*X11pred[j] + b[7]*X22pred[j] + b[8]*X33pred[j] + b[9]*X44pred[j] + b[10]*X55pred[j] + b[11]*X2X4pred[j] + b[12]*X3X5pred[j], sigma);
+        ypred[j] = normal_rng(a + b[1]*X1[j] + b[2]*X2[j] + b[3]*X3[j] + b[4]*X4[j] + b[5]*X5[j] + b[6]*X11[j] + b[7]*X22[j] + b[8]*X33[j] + b[9]*X44[j] + b[10]*X55[j] + b[11]*X2X4[j] + b[12]*X3X5[j], sigma);
+
     } 
  
 }
