@@ -1,9 +1,0 @@
-Model,div,energy,loo,loo_se,p_loo,treedepth,warning
-Linear; 3 Predictors Uninformative,True,True,366.452961219756,1182.8337675165499,1256.8301355776043,True,1
-"Linear; 3 Predictors Weakly Informative, Normal",True,True,345.6950004119556,1172.7415413086744,1238.7435648316093,True,1
-"Linear; 5 Predictors Weakly Informative, Normal",True,True,-43.63770522210753,17.131489438863955,9.868437356499573,True,1
-"Non-Linear; 5 Predictors Weakly Informative inter 1, Normal",True,True,1654.3628844832404,1576.3765623562194,1770.491338720239,True,1
-"Non-Linear; 5 Predictors Weakly Informative inter 2, Normal",True,True,3280.2448124899984,2087.9825869189003,2498.0184411256205,True,1
-"Non-Linear; 5 Predictors Weakly Informative squared, Normal",True,True,2293.6720344266273,1645.3400631745685,2022.8844274278556,True,1
-"Non-Linear; 5 Predictors Weakly Informative squared inter, Normal",True,True,3593.112843055364,1969.0882948632816,2568.866246083561,True,1
-"Non-Linear; 5 Predictors Weakly Informative cubic, Normal",False,True,7006.387084684975,2981.668839239299,4195.288375346948,True,1
