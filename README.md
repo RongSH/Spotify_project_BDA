@@ -8,7 +8,7 @@ https://github.com/RongSH/Spotify_project_BDA/blob/master/Spotify_project_notebo
 
 https://github.com/RongSH/Spotify_project_BDA/blob/master/TeamSpotify.pdf
 
-### API data collection & preprocessing:
+#### API data collection & preprocessing:
 
 https://github.com/RongSH/Spotify_project_BDA/blob/master/Preprocessing.ipynb
 
