@@ -1,11 +1,5 @@
 # Project for Bayesian Data Analysis course
 
-### Data source: Spotify API
-
-https://spotifycharts.com/regional/global/weekly/latest
-
-https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/
-
 ### Python notebook workflow:
 
 Final report: https://github.com/RongSH/Spotify_project_BDA/blob/master/Spotify_project_notebook.ipynb
@@ -19,3 +13,9 @@ https://github.com/RongSH/Spotify_project_BDA/blob/master/Appendix%203_Modeling.
 ### Presentation slides: 
 
 https://github.com/RongSH/Spotify_project_BDA/blob/master/TeamSpotify.pdf
+
+### Data source: Spotify API
+
+https://spotifycharts.com/regional/global/weekly/latest
+
+https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/
