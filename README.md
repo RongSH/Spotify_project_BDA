@@ -16,9 +16,7 @@ https://github.com/RongSH/Spotify_project_BDA/blob/master/Preprocessing.ipynb
 https://github.com/RongSH/Spotify_project_BDA/blob/master/Appendix%202_EDA.ipynb
 https://github.com/RongSH/Spotify_project_BDA/blob/master/Appendix%203_Modeling.ipynb
 
-
-
-### Data source: Spotify API
+#### Data source: Spotify API
 
 https://spotifycharts.com/regional/global/weekly/latest
 
