@@ -2,10 +2,6 @@
 
 Datasource: 
 
-Kaggle datasets:
-
-https://www.kaggle.com/edumucelli/spotifys-worldwide-daily-song-ranking
-
 Spotify API:
 https://spotifycharts.com/regional/global/weekly/latest
 
