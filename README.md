@@ -3,8 +3,7 @@
 ### Main notebook:
 [](https://github.com/RongSH/Spotify_project_BDA/blob/master/Spotify_project_notebook.ipynb)
 
-### [API data collection & preprocessing:]
-(https://github.com/RongSH/Spotify_project_BDA/blob/master/Preprocessing.ipynb)
+### [API data collection & preprocessing:](https://github.com/RongSH/Spotify_project_BDA/blob/master/Preprocessing.ipynb)
 
 ### Exploratory data anlysis and modeling Appendices:
 https://github.com/RongSH/Spotify_project_BDA/blob/master/Appendix%202_EDA.ipynb
