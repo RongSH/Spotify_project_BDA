@@ -7,8 +7,8 @@
 - [Modeling details](https://github.com/RongSH/Spotify_project_BDA/blob/master/Appendix%203_Modeling.ipynb)
 
 ### Presentation 
-[Slides](https://github.com/RongSH/Spotify_project_BDA/blob/master/TeamSpotify.pdf)
+- [Slides](https://github.com/RongSH/Spotify_project_BDA/blob/master/TeamSpotify.pdf)
 
 ### Data source: Spotify API
-[Spotify ranking](https://spotifycharts.com/regional/global/weekly/latest)
-[Audio feature API](https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/)
+- [Spotify ranking](https://spotifycharts.com/regional/global/weekly/latest)
+- [Audio feature API](https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/)
